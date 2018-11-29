@@ -30,11 +30,11 @@ stages:
 #    nonErpDestinations:
 #      - ''
 
-#  productionDeployment:
-#    cfTargets:
-#      - org: 'org'
-#        space: 'Productive'
-#        apiEndpoint: 'https://'
-#        appName: 'appName'
-#        manifest: 'manifest.yml'
-#        credentialsId: 'credentialsId'
+ productionDeployment:
+   cfTargets:
+     - org: 'S0011245624trial_trial'
+       space: 'dev'
+       apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
+       appName: 'address-manager'
+       manifest: 'manifest.yml'
+       credentialsId: 'CF-DEPLOY'
